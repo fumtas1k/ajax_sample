@@ -55,6 +55,14 @@ class MessagesController < ApplicationController
     end
   end
 
+  def searches
+    messages = Message.where("title LIKE ?", "%#{params[:title]}%")
+    respond_to do |format|
+      format.html { redirect_to root_path }
+      format.json { render json: messages }
+    end
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
