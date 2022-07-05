@@ -1,24 +1,11 @@
-# README
+# 検索機能をajaxで実装（サンプル）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## deploy
 
-Things you may want to cover:
+https://immense-dusk-50943.herokuapp.com/
 
-* Ruby version
+## 環境
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ruby: 3.0.1
+- rails: 6.0.3
+- jquery: 3.5.1
