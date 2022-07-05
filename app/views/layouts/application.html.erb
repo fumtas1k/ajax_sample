@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AjaxSample</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +12,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main>
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
   </body>
 </html>
