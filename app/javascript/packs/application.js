@@ -20,8 +20,8 @@ $(document).on("turbolinks:load", function(){
     }).done(function(data){
       $(".js-messages li").remove();
 
-      data.forEach((message, i) => {
-        $(".js-messages").append(createHtml(message));
+      data.forEach((message) => {
+        $(".js-messages").append(createMessageHtml(message));
       });
     }).fail(function(jqXHR, textStatus, errorThrown) {
       console.error(jqXHR);
@@ -29,7 +29,7 @@ $(document).on("turbolinks:load", function(){
   });
 });
 
-function createHtml(message) {
+function createMessageHtml(message) {
   return `<li class="message">
     <a href="/messages/${message.id}">${message.title}</a>
   </li>`
